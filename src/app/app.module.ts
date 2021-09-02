@@ -8,6 +8,7 @@ import { SharedModule } from './modules/shared.module';
 import { HeaderComponent } from './common/header/header.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+// import { SalaryCalculatorComponent } from './components/salary-calculator/salary-calculator.component';
 // import { AgeCalculatorComponent } from './components/age-calculator/age-calculator.component';
 // import { BasicCalculatorComponent } from './components/basic-calculator/basic-calculator.component';
 // import { BmiCalculatorComponent } from './components/bmi-calculator/bmi-calculator.component';
@@ -16,6 +17,7 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent,
     HeaderComponent,
+    // SalaryCalculatorComponent,
     // AgeCalculatorComponent,
     // BasicCalculatorComponent,
     // BmiCalculatorComponent

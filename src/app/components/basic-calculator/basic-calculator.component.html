@@ -9,26 +9,26 @@
   <div style="display: flex;">
     <mat-form-field class="example-full-width" appearance="fill" style="width: 50%;">
       <mat-label>Enter Number</mat-label>
-      <input type="number" matInput formControlName="num1" placeholder="Ex. pat@example.com">
+      <input type="number" matInput formControlName="num1">
     </mat-form-field>
 
     <mat-form-field class="example-full-width" appearance="fill" style="width: 50%; padding-left: 15px;">
       <mat-label>Enter Number</mat-label>
-      <input type="number" matInput formControlName="num2" placeholder="Ex. pat@example.com">
+      <input type="number" matInput formControlName="num2">
     </mat-form-field>
   </div>
 
   <div style="display: flex; justify-content: space-between;">
-    <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="addition()">
+    <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="addition()" [disabled]="basicCalculatorForm.invalid">
       <mat-icon>add</mat-icon>
     </button>
-    <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon" (click)="substraction()">
+    <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon" (click)="substraction()" [disabled]="basicCalculatorForm.invalid">
       <mat-icon>remove</mat-icon>
     </button>
-    <button mat-fab color="warn" aria-label="Example icon button with a bookmark icon" (click)="multiplication()">
+    <button mat-fab color="warn" aria-label="Example icon button with a bookmark icon" (click)="multiplication()" [disabled]="basicCalculatorForm.invalid">
       <mat-icon>close</mat-icon>
     </button>
-    <button mat-fab color="basic" aria-label="Example icon button with a bookmark icon" (click)="division()">
+    <button mat-fab color="basic" aria-label="Example icon button with a bookmark icon" (click)="division()" [disabled]="basicCalculatorForm.invalid">
       <span><img style="width: 30px;" src="https://img.icons8.com/ios-filled/50/000000/divide.png" /></span>
     </button>
   </div>
