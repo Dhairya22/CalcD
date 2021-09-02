@@ -6,6 +6,7 @@ import { BmiCalculatorComponent } from '../components/bmi-calculator/bmi-calcula
 import { AgeCalculatorComponent } from '../components/age-calculator/age-calculator.component';
 import { BasicCalculatorComponent } from '../components/basic-calculator/basic-calculator.component';
 import { SalaryCalculatorComponent } from '../components/salary-calculator/salary-calculator.component';
+import { BmiInfoComponent } from '../components/bmi-info/bmi-info.component';
 
 
 
@@ -14,7 +15,8 @@ import { SalaryCalculatorComponent } from '../components/salary-calculator/salar
     BmiCalculatorComponent,
     AgeCalculatorComponent,
     BasicCalculatorComponent,
-    SalaryCalculatorComponent
+    SalaryCalculatorComponent,
+    BmiInfoComponent
   ],
   imports: [
     CommonModule,

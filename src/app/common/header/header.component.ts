@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AgeCalculatorComponent } from 'src/app/components/age-calculator/age-calculator.component';
 import { BasicCalculatorComponent } from 'src/app/components/basic-calculator/basic-calculator.component';
 import { BmiCalculatorComponent } from 'src/app/components/bmi-calculator/bmi-calculator.component';
+import { BmiInfoComponent } from 'src/app/components/bmi-info/bmi-info.component';
 import { InfoComponent } from 'src/app/components/info/info.component';
 import { SalaryCalculatorComponent } from 'src/app/components/salary-calculator/salary-calculator.component';
-import information from 'src/app/json/info.json';
+// import information from 'src/app/json/info.json';
 
 @Component({
   selector: 'app-header',
@@ -14,12 +16,16 @@ import information from 'src/app/json/info.json';
 })
 export class HeaderComponent implements OnInit {
 
+  data: any;
+
   constructor(
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private router: Router,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
-    let value = information
+    // this.data = information
   }
 
   openBMICalculator(): void {
@@ -62,8 +68,24 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  // info(id: number) {
+  //   this.route.queryParams
+  //     .subscribe(params => {
+  //       // console.log(params.id);
+  //       if (id == 1) {
+  //         this.router.navigate(['/info']);
+  //         // console.log("id = 1");
+  //       } else if (id == 2) {
+  //         this.router.navigate(['/info']);
+  //         // console.log("id = 2");          
+  //       } else if (id == 3) {
+  //         this.router.navigate(['/info']);
+  //       }
+  //     })
+  // }
+
   info(){
-    const dialogRef = this.dialog.open(InfoComponent, {
+    const dialogRef = this.dialog.open(BmiInfoComponent, {
       width: '500px',
     });
 
@@ -71,5 +93,4 @@ export class HeaderComponent implements OnInit {
       console.log('The dialog was closed');
     });
   }
-
 }
