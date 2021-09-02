@@ -30,15 +30,19 @@ p {
   border-radius: 15px;
 }
 
+.mat-card-header .mat-card-title {
+  margin-bottom: 0px !important;
+}
+
 .mat-icon{
     cursor: pointer;
 }
 
 .mat-card-title{
-    font-size: 1.8rem;
-    font-family: 'Bangers', cursive;
-    font-weight: 400;
-    padding-bottom: 10px;
+    font-size: 1.6rem;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    padding: 10px 10px;
 }
 
 .mat-card-content{
