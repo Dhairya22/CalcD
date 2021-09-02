@@ -1,1 +1,43 @@
-<p>age-calculator works!</p>
+<div align="end">
+    <button mat-icon-button class="close-button" [mat-dialog-close]="true">
+      <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </button>
+  </div>
+  <form class="form-container" [formGroup]="dateForm">
+    <h1 style="font-family: 'Poiret One', cursive; text-align: center; font-weight: 800;">Age Calculator</h1>
+    <mat-form-field appearance="fill" class="example-form-field" style="width: 100%;">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="datepicker" formControlName="datePicker" (dateChange)="dateChangedCheck($event)">
+        <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #datepicker>
+          <mat-datepicker-actions>
+            <button mat-button matDatepickerCancel>Cancel</button>
+            <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+          </mat-datepicker-actions>
+        </mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="example-form-field" style="width: 100%;">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="datepicker" formControlName="datePicker" (dateChange)="dateChangedCheck($event)">
+        <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #datepicker>
+          <mat-datepicker-actions>
+            <button mat-button matDatepickerCancel>Cancel</button>
+            <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+          </mat-datepicker-actions>
+        </mat-datepicker>
+      </mat-form-field>
+
+      <mat-card-actions align="center" style="display: flex;">
+        <button mat-raised-button color="primary" style="width: 50%;" [disabled]="dateForm.invalid"
+          (click)="calculate()">Calculate</button>
+        <!-- <button mat-raised-button color="basic" style="width: 50%;" (click)="resetForm()">Clear</button> -->
+        <button mat-stroked-button style="width: 50%;" (click)="resetForm()">Clear</button>
+      </mat-card-actions>
+  </form>
+
+  <div class="emboss">
+    <p style="font-family: 'Josefin Sans', sans-serif; font-size: 1.5rem;">
+        Your Age ->
+    </p>
+  </div>

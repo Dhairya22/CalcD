@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
 
   openAgeCalculator(): void {
     const dialogRef = this.dialog.open(AgeCalculatorComponent, {
-      width: '800px',
+      width: '500px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
 
   openBasicCalculator(): void {
     const dialogRef = this.dialog.open(BasicCalculatorComponent, {
-      width: '800px',
+      width: '500px',
     });
 
     dialogRef.afterClosed().subscribe(result => {
