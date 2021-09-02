@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "title": "What is BMI ?",
+        "bmi": "Body mass index (BMI) is a person’s weight in kilograms divided by the square of height in meters.Overweight is a BMI of 27.3 or more for women and 27.8 or more for men.Obesity is a BMI of 30 or more for either sex (about 30 pounds overweight).A very muscular person might have a high BMI without health risks."
+    }, {
+        "id": 2,
+        "title": "What is Age Calculator ?",
+        "age": "The age of a person can be counted differently in different cultures. This calculator is based on the most common age system. In this system, age grows at the birthday. For example, the age of a person that has lived for 3 years and 11 months is 3 and the age will turn to 4 at his/her next birthday one month later. Most western countries use this age system.In some cultures, age is expressed by counting years with or without including the current year. For example, one person who is twenty years old is the same as one person who is in the twenty-first year of his/her life. In one of the traditional Chinese age systems, people are born at age 1 and the age grows up at the Traditional Chinese New Year instead of birthday. For example, if one baby was born just one day before the Traditional Chinese New Year, 2 days later, the baby will be at age 2 even though he/she is only 2 days old.In some situations, the months and days result of this age calculator may be confusing, especially when the starting date is the end of a month. For example, we all count Feb. 20 to March 20 to be one month. However, there are two ways to calculate the age from Feb. 28, 2015 to Mar. 31, 2015. If thinking Feb. 28 to Mar. 28 as one month, then the result is one month and 3 days. If thinking both Feb. 28 and Mar. 31 as the end of the month, then the result is one month. Both calculation results are reasonable. Similar situations exist for dates like Apr. 30 to May 31, May 30 to June 30, etc. The confusion comes from the uneven number of days in different months. In our calculation, we used the former method."
+    }, {
+        "id": 3,
+        "title": "What is Basic Calculator ?",
+        "basic": "A calculator is a device that performs arithmetic operations on numbers. The simplest calculators can do only addition, subtraction, multiplication, and division. More sophisticated calculators can handle exponent ial operations, roots, logarithm s, trigonometric functions, and hyperbolic functions. Internally, some calculators actually perform all of these functions by repeated processes of addition.But this calculator only perform basic mathematic operations."
+    }, {
+        "id": 4,
+        "title": "What is Salary Calculator ?",
+        "salary": "A take-home salary calculator is an automated tool that helps you figure out your net salary after taxation. It also considers all the bonuses and deductions applicable. You must provide the gross salary and total bonus.The calculator will then determine the CTC and show you the amounts of basic salary, HRA, other allowances, deductions for provident fund and professional tax, total deduction, net salary, income tax, and net salary after income tax deduction."
+    }
+]
