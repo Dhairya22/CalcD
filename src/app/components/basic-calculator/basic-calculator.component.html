@@ -1,43 +1,44 @@
 <div align="end">
-    <button mat-icon-button class="close-button" [mat-dialog-close]="true">
-      <mat-icon class="close-icon" color="warn">close</mat-icon>
-    </button>
-  </div>
+  <button mat-icon-button class="close-button" [mat-dialog-close]="true">
+    <mat-icon class="close-icon" color="warn">close</mat-icon>
+  </button>
+</div>
 
 <form class="example-form" [formGroup]="basicCalculatorForm">
-    <h1 style="font-family: 'Poiret One', cursive; text-align: center; font-weight: 800;">Basic Calculator</h1>
-    <div style="display: flex;">
-        <mat-form-field class="example-full-width" appearance="fill" style="width: 50%;">
-          <mat-label>Enter Number</mat-label>
-          <input type="number" matInput formControlName="num1" placeholder="Ex. pat@example.com">
-        </mat-form-field>
+  <h1 style="font-family: 'Poiret One', cursive; text-align: center; font-weight: 800;">Basic Calculator</h1>
+  <div style="display: flex;">
+    <mat-form-field class="example-full-width" appearance="fill" style="width: 50%;">
+      <mat-label>Enter Number</mat-label>
+      <input type="number" matInput formControlName="num1" placeholder="Ex. pat@example.com">
+    </mat-form-field>
 
-        <mat-form-field class="example-full-width" appearance="fill" style="width: 50%; padding-left: 15px;">
-            <mat-label>Enter Number</mat-label>
-            <input type="number" matInput formControlName="num2" placeholder="Ex. pat@example.com">
-          </mat-form-field>
-    </div>
-
-    <div style="display: flex; justify-content: space-between;">
-        <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="addition()">
-            <mat-icon>add</mat-icon>
-          </button>
-          <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon" (click)="substraction()">
-            <mat-icon>remove</mat-icon>
-          </button>
-          <button mat-fab color="warn" aria-label="Example icon button with a bookmark icon" (click)="multiplication()">
-            <mat-icon>close</mat-icon>
-          </button>
-          <button mat-fab color="basic" aria-label="Example icon button with a bookmark icon" (click)="division()">
-            <span ><img style="width: 30px;" src="https://img.icons8.com/ios-filled/50/000000/divide.png"/></span>
-          </button>
-    </div>
-  </form>
-
-  <div class="emboss" style="gap: 15px;">
-    <p style="font-family: 'Josefin Sans', sans-serif; font-size: 1.5rem;">
-        Result -> <span style="margin-left: 50px; font-size: 1.5rem; font-family: 'Courgette', cursive; margin-top: 5px; color: royalblue;">
-            {{result}}
-        </span>
-    </p>
+    <mat-form-field class="example-full-width" appearance="fill" style="width: 50%; padding-left: 15px;">
+      <mat-label>Enter Number</mat-label>
+      <input type="number" matInput formControlName="num2" placeholder="Ex. pat@example.com">
+    </mat-form-field>
   </div>
+
+  <div style="display: flex; justify-content: space-between;">
+    <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="addition()">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon" (click)="substraction()">
+      <mat-icon>remove</mat-icon>
+    </button>
+    <button mat-fab color="warn" aria-label="Example icon button with a bookmark icon" (click)="multiplication()">
+      <mat-icon>close</mat-icon>
+    </button>
+    <button mat-fab color="basic" aria-label="Example icon button with a bookmark icon" (click)="division()">
+      <span><img style="width: 30px;" src="https://img.icons8.com/ios-filled/50/000000/divide.png" /></span>
+    </button>
+  </div>
+</form>
+
+<div class="emboss" style="gap: 15px;">
+  <p style="font-family: 'Josefin Sans', sans-serif; font-size: 1.5rem;">
+    Result -> <span
+      style="margin-left: 50px; font-size: 1.5rem; font-family: 'Courgette', cursive; margin-top: 5px; color: royalblue;">
+      {{result}}
+    </span>
+  </p>
+</div>
