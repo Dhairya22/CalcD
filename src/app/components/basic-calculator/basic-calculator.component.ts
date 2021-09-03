@@ -26,22 +26,18 @@ export class BasicCalculatorComponent implements OnInit {
 
   addition(){
     this.result = this.basicCalculatorForm.controls.num1.value + this.basicCalculatorForm.controls.num2.value;
-    this.basicCalculatorForm.reset();
   }
 
   substraction(){
     this.result = this.basicCalculatorForm.controls.num1.value - this.basicCalculatorForm.controls.num2.value;
-    this.basicCalculatorForm.reset();
   }
 
   multiplication(){
     this.result = this.basicCalculatorForm.controls.num1.value * this.basicCalculatorForm.controls.num2.value;
-    this.basicCalculatorForm.reset();
   }
   division(){
     this.result = this.basicCalculatorForm.controls.num1.value / this.basicCalculatorForm.controls.num2.value;
     this.result = Math.round(this.result*100)/100;
-    this.basicCalculatorForm.reset();
   }
 
 }
