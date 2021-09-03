@@ -7,6 +7,8 @@ import { AgeCalculatorComponent } from '../components/age-calculator/age-calcula
 import { BasicCalculatorComponent } from '../components/basic-calculator/basic-calculator.component';
 import { SalaryCalculatorComponent } from '../components/salary-calculator/salary-calculator.component';
 import { BmiInfoComponent } from '../components/bmi-info/bmi-info.component';
+import { MarkupCalculatorComponent } from '../components/markup-calculator/markup-calculator.component';
+import { GstCalculatorComponent } from '../components/gst-calculator/gst-calculator.component';
 
 
 
@@ -16,6 +18,8 @@ import { BmiInfoComponent } from '../components/bmi-info/bmi-info.component';
     AgeCalculatorComponent,
     BasicCalculatorComponent,
     SalaryCalculatorComponent,
+    MarkupCalculatorComponent,
+    GstCalculatorComponent,
     BmiInfoComponent
   ],
   imports: [

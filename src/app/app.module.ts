@@ -9,6 +9,8 @@ import { HeaderComponent } from './common/header/header.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { InfoComponent } from './components/info/info.component';
+// import { GstCalculatorComponent } from './components/gst-calculator/gst-calculator.component';
+// import { MarkupCalculatorComponent } from './components/markup-calculator/markup-calculator.component';
 // import { BmiInfoComponent } from './components/bmi-info/bmi-info.component';
 // import { SalaryCalculatorComponent } from './components/salary-calculator/salary-calculator.component';
 // import { AgeCalculatorComponent } from './components/age-calculator/age-calculator.component';
@@ -20,6 +22,8 @@ import { InfoComponent } from './components/info/info.component';
     AppComponent,
     HeaderComponent,
     InfoComponent,
+    // GstCalculatorComponent,
+    // MarkupCalculatorComponent,
     // BmiInfoComponent,
     // SalaryCalculatorComponent,
     // AgeCalculatorComponent,

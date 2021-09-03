@@ -65,7 +65,7 @@
       </div>
     </mat-card>
 
-    <mat-card class="example-card card3">
+    <mat-card class="example-card card4">
       <mat-card-header>
         <mat-card-title>Salary Calculator</mat-card-title>
       </mat-card-header>
@@ -77,6 +77,38 @@
       </mat-card-content>
       <div class="buttons">
         <button mat-raised-button color="warn" style="cursor: pointer;" (click)="openSalaryCalculator()">Calculate</button>
+        <mat-icon matTooltip="what is salary calculator?" style="color: rgb(105, 105, 105);">info</mat-icon>
+      </div>
+    </mat-card>
+
+    <mat-card class="example-card card5">
+      <mat-card-header>
+        <mat-card-title>Mark Up Calculator</mat-card-title>
+      </mat-card-header>
+      <hr>
+      <mat-card-content>
+        <span>
+          Markup is the difference between cost and selling price and is determined with a simple formula. 
+        </span>
+      </mat-card-content>
+      <div class="buttons">
+        <button mat-raised-button color="warn" style="cursor: pointer;" (click)="openMarkupCalculator()">Calculate</button>
+        <mat-icon matTooltip="what is salary calculator?" style="color: rgb(105, 105, 105);">info</mat-icon>
+      </div>
+    </mat-card>
+
+    <mat-card class="example-card card5">
+      <mat-card-header>
+        <mat-card-title>GST Calculator</mat-card-title>
+      </mat-card-header>
+      <hr>
+      <mat-card-content>
+        <span>
+          The GST rates applicable on the various goods or services can now be calculated.
+        </span>
+      </mat-card-content>
+      <div class="buttons">
+        <button mat-raised-button color="warn" style="cursor: pointer;" (click)="openGSTCalculator()">Calculate</button>
         <mat-icon matTooltip="what is salary calculator?" style="color: rgb(105, 105, 105);">info</mat-icon>
       </div>
     </mat-card>
