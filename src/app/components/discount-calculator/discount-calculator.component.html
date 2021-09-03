@@ -1,0 +1,47 @@
+<div align="end">
+  <button mat-icon-button class="close-button" [mat-dialog-close]="true">
+    <mat-icon class="close-icon" color="warn">close</mat-icon>
+  </button>
+</div>
+
+<form class="form-container" [formGroup]="discountForm">
+  <h1 style="font-family: 'Poiret One', cursive; text-align: center; font-weight: 800;">GST Calculator</h1>
+  <mat-card-content>
+    <mat-form-field class="full-width" style="width: 100%;">
+      <input matInput type="number" placeholder="Enter Amount" formControlName="amount">
+    </mat-form-field>
+
+    <mat-form-field class="full-width" style="width: 100%;">
+        <input matInput type="number" placeholder="Enter Discount" formControlName="discount">
+      </mat-form-field>
+    <!-- <p style="font-size: large;">Dicount (in percentage)</p> -->
+    <!-- <mat-slider thumbLabel [displayWith]="calculate" tickInterval="1000" step="1" min="0" max="100" style="width: 100%;"
+      aria-label="units" formControlName="slider"></mat-slider> -->
+  </mat-card-content>
+  <mat-card-actions align="center" style="display: flex;">
+    <button mat-raised-button color="primary" style="width: 50%;" [disabled]="discountForm.invalid" (click)="calculate()">Calculate</button>
+    <button mat-stroked-button style="width: 50%;" (click)="resetForm()">Clear</button>
+  </mat-card-actions>
+</form>
+
+<div>
+    <div class="dcf-overflow-x-auto" tabindex="0">
+      <table class="dcf-table dcf-table-bordered dcf-table-striped dcf-w-100%"
+        style="margin: 0 auto; width: 100%; text-align: center;" class="emboss">
+        <thead style="border-bottom: 1px solid black; font-family: 'Josefin Sans', sans-serif; font-size: 1.5rem;">
+          <tr>
+            <th>Discount</th>
+            <th>Payable</th>
+            <!-- <th>Message</th> -->
+          </tr>
+        </thead>
+        <tbody style="font-size: 1.1rem; font-family: 'Courgette', cursive; margin-top: 5px; color: royalblue;">
+          <tr>
+            <td>{{discount}}</td>
+            <td>{{payableAmount}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+  </div>

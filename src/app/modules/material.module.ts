@@ -31,7 +31,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTooltipModule } from '@angular/material/tooltip';
 // import { MatSortModule } from '@angular/material/sort';
 // import { MatPaginatorModule } from '@angular/material/paginator';
-// import { MatSliderModule } from '@angular/material/slider';
+import { MatSliderModule } from '@angular/material/slider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -69,7 +69,7 @@ const materialModules = [
     MatTableModule,
     MatSlideToggleModule,
     MatTooltipModule,
-    // MatSliderModule,
+    MatSliderModule,
     MatGridListModule,
     MatTabsModule,
     MatButtonToggleModule,

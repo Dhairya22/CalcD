@@ -5,6 +5,7 @@ import { AgeCalculatorComponent } from 'src/app/components/age-calculator/age-ca
 import { BasicCalculatorComponent } from 'src/app/components/basic-calculator/basic-calculator.component';
 import { BmiCalculatorComponent } from 'src/app/components/bmi-calculator/bmi-calculator.component';
 import { BmiInfoComponent } from 'src/app/components/bmi-info/bmi-info.component';
+import { DiscountCalculatorComponent } from 'src/app/components/discount-calculator/discount-calculator.component';
 import { GstCalculatorComponent } from 'src/app/components/gst-calculator/gst-calculator.component';
 import { InfoComponent } from 'src/app/components/info/info.component';
 import { MarkupCalculatorComponent } from 'src/app/components/markup-calculator/markup-calculator.component';
@@ -82,6 +83,16 @@ export class HeaderComponent implements OnInit {
 
   openGSTCalculator(){
     const dialogRef = this.dialog.open(GstCalculatorComponent, {
+      width: '500px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  openDiscountCalculator(){
+    const dialogRef = this.dialog.open(DiscountCalculatorComponent, {
       width: '500px',
     });
 

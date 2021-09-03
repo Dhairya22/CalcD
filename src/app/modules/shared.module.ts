@@ -9,6 +9,7 @@ import { SalaryCalculatorComponent } from '../components/salary-calculator/salar
 import { BmiInfoComponent } from '../components/bmi-info/bmi-info.component';
 import { MarkupCalculatorComponent } from '../components/markup-calculator/markup-calculator.component';
 import { GstCalculatorComponent } from '../components/gst-calculator/gst-calculator.component';
+import { DiscountCalculatorComponent } from '../components/discount-calculator/discount-calculator.component';
 
 
 
@@ -20,6 +21,7 @@ import { GstCalculatorComponent } from '../components/gst-calculator/gst-calcula
     SalaryCalculatorComponent,
     MarkupCalculatorComponent,
     GstCalculatorComponent,
+    DiscountCalculatorComponent,
     BmiInfoComponent
   ],
   imports: [
