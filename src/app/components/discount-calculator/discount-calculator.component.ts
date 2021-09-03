@@ -22,7 +22,7 @@ export class DiscountCalculatorComponent implements OnInit {
   prepareForm(){
     this.discountForm = new FormGroup({
       amount: new FormControl('',Validators.required),
-      discount: new FormControl('',Validators.required)
+      discount: new FormControl('',[Validators.required,Validators.max(100),Validators.min(1)])
     })
   }
 
@@ -33,7 +33,8 @@ export class DiscountCalculatorComponent implements OnInit {
     //   return Math.round(value / 1000) + '%';
     // }
     this.discount = this.discountForm.controls.amount.value - ((this.discountForm.controls.amount.value * this.discountForm.controls.discount.value) / 100);
-    this.payableAmount = this.discountForm.controls.amount.value - ((this.discount / 100) * this.discountForm.controls.amount.value);
+    // this.payableAmount = this.discountForm.controls.amount.value - ((this.discount / 100) * this.discountForm.controls.amount.value);
+    this.payableAmount = this.discountForm.controls.amount.value - this.discount
     // this.payableAmount = Math.round(this.payableAmount*100)/100;
   }
 

@@ -9,6 +9,7 @@ import { HeaderComponent } from './common/header/header.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { InfoComponent } from './components/info/info.component';
+import { TitleComponent } from './common/title/title.component';
 // import { DiscountCalculatorComponent } from './components/discount-calculator/discount-calculator.component';
 // import { GstCalculatorComponent } from './components/gst-calculator/gst-calculator.component';
 // import { MarkupCalculatorComponent } from './components/markup-calculator/markup-calculator.component';
@@ -23,6 +24,7 @@ import { InfoComponent } from './components/info/info.component';
     AppComponent,
     HeaderComponent,
     InfoComponent,
+    TitleComponent,
     // DiscountCalculatorComponent,
     // GstCalculatorComponent,
     // MarkupCalculatorComponent,

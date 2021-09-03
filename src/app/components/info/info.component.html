@@ -1,5 +1,3 @@
 <div class="container" *ngFor="let data of data">
-    <div style="text-align: center;">
-        <h1>{{data.title}}</h1>
-    </div>
+    <app-title [title]="data.title" *ngIf="data.type == 'title'"></app-title>
 </div>
